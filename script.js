@@ -1,4 +1,5 @@
 function fetchbutton() {
+  /*
   //XHR object
   var XhrRequest = new XMLHttpRequest();
 
@@ -16,7 +17,26 @@ function fetchbutton() {
   XhrRequest.open("get", "https://dog.ceo/api/breeds/image/random", true);
   //Make a request
   XhrRequest.send();
+  */
+
+  //Method 1
+  /*
+  $.ajax({
+    url: "https://dog.ceo/api/breeds/image/random",
+    method: "get",
+    success: function (data) {
+      // var responseJSON = JSON.parse(XhrRequest.response);
+      var Imageurl = data.message;
+      //display
+      $("#dog-img").attr("src", Imageurl);
+    },
+  });*/
+  //Method 2
+  $.get("https://dog.ceo/api/breeds/image/random", function (data) {
+    var Imageurl = data.message;
+    //display
+    $("#dog-img").attr("src", Imageurl);
+  });
 }
 
 $("#img-button").click(fetchbutton);
-console.log('demo');
