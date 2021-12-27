@@ -1,0 +1,31 @@
+client server commuication 
+==========================
+1.AJAX-->Dynamic websites(Asynchronous javascript & XML)
+
+2. what is different between synchronous and asynchronous?
+synchronous
+==========
+Synchronously, in which the script stops and waits for the server to send back a reply before continuing.
+example
+R1---> start .once completed 
+R2--->next start
+Asynchronous
+===========
+ Asynchronously, in which the script allows the page to continue to be processed and handles the reply if and when it arrives
+ example
+R1--->start.
+R2--->start.
+
+AJAX
+====
+1.To make an Asynchronous Req
+2.To load new content without reloading the page
+
+3.XML
+client ---------XML HTTP Req-------->server to return the date
+but nowadays client ---------JSON Req-------->server to return the date
+--->beauty batterfly extendtion
+
+HTTP
+====
+stateless 
