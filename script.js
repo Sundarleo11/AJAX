@@ -19,3 +19,4 @@ function fetchbutton() {
 }
 
 $("#img-button").click(fetchbutton);
+console.log('demo');
